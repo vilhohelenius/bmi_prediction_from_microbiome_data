@@ -39,7 +39,7 @@ Microbiome features were transformed using **centered log-ratio (CLR)** transfor
 
 Model performance was evaluated using:
 
-- \(R^2\)
+- R<sup>2</sup>
 - RMSE
 - MAE
 
