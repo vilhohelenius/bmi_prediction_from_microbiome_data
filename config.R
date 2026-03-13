@@ -46,7 +46,7 @@ DATASET_SIZES <- c(
   1000,
   2000,
   5000,
-  8000   # last value automatically clipped to train size if needed
+  10000   # last value automatically clipped to train size if needed
 )
 
 ############################
