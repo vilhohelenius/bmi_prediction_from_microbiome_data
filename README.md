@@ -1,4 +1,4 @@
-# Microbiome-based BMI prediction using machine learning
+# Comparative Evaluation of Machine Learning Models for BMI Prediction from Gut Microbiome Data
 
 This repository contains the code used in the master's thesis:
 
