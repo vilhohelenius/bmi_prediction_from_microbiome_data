@@ -57,14 +57,8 @@ X_mat <- as.matrix(X)
 # Bray–Curtis distance + PCoA
 ###############################################################
 
-# Bray-Curtis expects non-negative inputs; CLR can be negative.
-# Still usable as a distance calculation in practice, but if you prefer:
-# - Use Euclidean on CLR: dist(X_mat)
-# - Or compute Bray on raw relative abundances before CLR
-# Here we follow your earlier approach (Bray), but warn if negatives exist.
 if (any(X_mat < 0, na.rm = TRUE)) {
-  warning("CLR features contain negative values. Bray–Curtis is traditionally used on non-negative abundances.\n",
-          "If you want a fully standard approach: use Euclidean distance on CLR (dist(X_mat)).")
+  warning("CLR features contain negative values. Bray–Curtis is traditionally used on non-negative abundances.")
 }
 
 bray_dist <- vegan::vegdist(dist(X_mat), method = "bray")
