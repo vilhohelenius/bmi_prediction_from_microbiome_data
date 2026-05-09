@@ -1,6 +1,5 @@
 ###############################################################
-# CONFIGURATION FILE — Master Thesis ML Pipeline
-# Central place for all global settings and paths
+# CONFIGURATION FILE
 ###############################################################
 
 ############################
