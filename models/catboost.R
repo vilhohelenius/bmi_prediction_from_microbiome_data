@@ -83,7 +83,6 @@ for (k in 1:CV_FOLDS) {
   )
   
   # Fold-level feature importance:
-  # "PredictionValuesChange" is fast and stable enough for fold stability analysis
   imp_vals <- catboost.get_feature_importance(
     model,
     pool = val_pool,
