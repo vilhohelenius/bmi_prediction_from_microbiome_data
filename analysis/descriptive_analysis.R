@@ -20,8 +20,8 @@ dir.create(PLOTS_DIR, showWarnings = FALSE, recursive = TRUE)
 # 1) Load data
 ###############################################################
 
-# --- Try to load md (metadata) from RDS (recommended) ---
-MD_PATH <- file.path(DATA_DIR, "md.rds")   # change if your md is saved elsewhere
+# --- Load md (metadata) from RDS ---
+MD_PATH <- file.path(DATA_DIR, "md.rds")
 
 if (file.exists(MD_PATH)) {
   md <- readRDS(MD_PATH)
@@ -93,7 +93,7 @@ ggsave(file.path(PLOTS_DIR, "bmi_density_by_split.png"), p_bmi_density, width = 
 print(p_bmi_density)
 
 ###############################################################
-# 3) BMI classes (WHO cutoffs) — optional but useful for figures
+# 3) BMI classes (WHO cutoffs)
 ###############################################################
 
 df_micro_all <- df_micro_all %>%
@@ -127,7 +127,7 @@ ggsave(file.path(PLOTS_DIR, "bmi_class_distribution.png"), p_bmi_class, width = 
 print(p_bmi_class)
 
 ###############################################################
-# 4) Metadata plots (age/sex) if md available
+# 4) Metadata plots (age/sex)
 ###############################################################
 
 
